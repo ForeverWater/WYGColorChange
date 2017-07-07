@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E132C351F0E362F00B6D97A /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E132C341F0E362F00B6D97A /* NavigationViewController.m */; };
 		7E77BACD1F0CCBD600DAE7D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77BACC1F0CCBD600DAE7D8 /* main.m */; };
 		7E77BAD01F0CCBD600DAE7D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77BACF1F0CCBD600DAE7D8 /* AppDelegate.m */; };
 		7E77BAD31F0CCBD600DAE7D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77BAD21F0CCBD600DAE7D8 /* ViewController.m */; };
@@ -15,6 +16,8 @@
 		7E77BADB1F0CCBD600DAE7D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E77BAD91F0CCBD600DAE7D8 /* LaunchScreen.storyboard */; };
 		7E77BAE61F0CCBD600DAE7D8 /* WYGColorChangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77BAE51F0CCBD600DAE7D8 /* WYGColorChangeTests.m */; };
 		7E77BAF11F0CCBD600DAE7D8 /* WYGColorChangeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77BAF01F0CCBD600DAE7D8 /* WYGColorChangeUITests.m */; };
+		7E77BB001F0CCC1F00DAE7D8 /* WYGGradualChangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77BAFF1F0CCC1F00DAE7D8 /* WYGGradualChangeView.m */; };
+		7E77BB041F0CDE8700DAE7D8 /* UIView+addGradualLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77BB031F0CDE8700DAE7D8 /* UIView+addGradualLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E132C331F0E362F00B6D97A /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		7E132C341F0E362F00B6D97A /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		7E77BAC81F0CCBD600DAE7D8 /* WYGColorChange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYGColorChange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E77BACC1F0CCBD600DAE7D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E77BACE1F0CCBD600DAE7D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +56,10 @@
 		7E77BAEC1F0CCBD600DAE7D8 /* WYGColorChangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYGColorChangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E77BAF01F0CCBD600DAE7D8 /* WYGColorChangeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYGColorChangeUITests.m; sourceTree = "<group>"; };
 		7E77BAF21F0CCBD600DAE7D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E77BAFE1F0CCC1F00DAE7D8 /* WYGGradualChangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYGGradualChangeView.h; sourceTree = "<group>"; };
+		7E77BAFF1F0CCC1F00DAE7D8 /* WYGGradualChangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYGGradualChangeView.m; sourceTree = "<group>"; };
+		7E77BB021F0CDE8700DAE7D8 /* UIView+addGradualLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+addGradualLayer.h"; sourceTree = "<group>"; };
+		7E77BB031F0CDE8700DAE7D8 /* UIView+addGradualLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+addGradualLayer.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,8 @@
 		7E77BABF1F0CCBD600DAE7D8 = {
 			isa = PBXGroup;
 			children = (
+				7E77BB021F0CDE8700DAE7D8 /* UIView+addGradualLayer.h */,
+				7E77BB031F0CDE8700DAE7D8 /* UIView+addGradualLayer.m */,
 				7E77BACA1F0CCBD600DAE7D8 /* WYGColorChange */,
 				7E77BAE41F0CCBD600DAE7D8 /* WYGColorChangeTests */,
 				7E77BAEF1F0CCBD600DAE7D8 /* WYGColorChangeUITests */,
@@ -105,6 +116,10 @@
 				7E77BACF1F0CCBD600DAE7D8 /* AppDelegate.m */,
 				7E77BAD11F0CCBD600DAE7D8 /* ViewController.h */,
 				7E77BAD21F0CCBD600DAE7D8 /* ViewController.m */,
+				7E132C331F0E362F00B6D97A /* NavigationViewController.h */,
+				7E132C341F0E362F00B6D97A /* NavigationViewController.m */,
+				7E77BAFE1F0CCC1F00DAE7D8 /* WYGGradualChangeView.h */,
+				7E77BAFF1F0CCC1F00DAE7D8 /* WYGGradualChangeView.m */,
 				7E77BAD41F0CCBD600DAE7D8 /* Main.storyboard */,
 				7E77BAD71F0CCBD600DAE7D8 /* Assets.xcassets */,
 				7E77BAD91F0CCBD600DAE7D8 /* LaunchScreen.storyboard */,
@@ -276,7 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E77BB041F0CDE8700DAE7D8 /* UIView+addGradualLayer.m in Sources */,
 				7E77BAD31F0CCBD600DAE7D8 /* ViewController.m in Sources */,
+				7E132C351F0E362F00B6D97A /* NavigationViewController.m in Sources */,
+				7E77BB001F0CCC1F00DAE7D8 /* WYGGradualChangeView.m in Sources */,
 				7E77BAD01F0CCBD600DAE7D8 /* AppDelegate.m in Sources */,
 				7E77BACD1F0CCBD600DAE7D8 /* main.m in Sources */,
 			);
@@ -518,6 +536,7 @@
 				7E77BAF71F0CCBD600DAE7D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E77BAF81F0CCBD600DAE7D8 /* Build configuration list for PBXNativeTarget "WYGColorChangeTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +545,7 @@
 				7E77BAFA1F0CCBD600DAE7D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E77BAFB1F0CCBD600DAE7D8 /* Build configuration list for PBXNativeTarget "WYGColorChangeUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +554,7 @@
 				7E77BAFD1F0CCBD600DAE7D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
