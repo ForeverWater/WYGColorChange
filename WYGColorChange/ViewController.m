@@ -43,7 +43,7 @@
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 400, 100, 100)];
     [button setTitle:@"点击按钮" forState:UIControlStateNormal];
     
-    [button addGradualLayerColors:@[(__bridge id)UIColorFromHEX(0xA442D7).CGColor,
+    [button addGradualLayerWithColors:@[(__bridge id)UIColorFromHEX(0xA442D7).CGColor,
                               (__bridge id)UIColorFromHEX(0xDB58A1).CGColor,
                               (__bridge id)UIColorFromHEX(0xFF7367).CGColor
                               ]];
@@ -52,7 +52,7 @@
     UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(220, 400, 100, 100)];
     textLabel.text = @"UILabel";
     textLabel.textColor = [UIColor whiteColor];
-    [textLabel addGradualLayerColors:@[(__bridge id)UIColorFromHEX(0x00E4FC).CGColor,
+    [textLabel addGradualLayerWithColors:@[(__bridge id)UIColorFromHEX(0x00E4FC).CGColor,
                                  (__bridge id)UIColorFromHEX(0x4AA2FB).CGColor,
                                  (__bridge id)UIColorFromHEX(0xFF7367).CGColor]];
     [self.view addSubview:textLabel];

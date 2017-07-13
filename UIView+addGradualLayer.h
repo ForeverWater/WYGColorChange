@@ -10,6 +10,6 @@
 
 @interface UIView (addGradualLayer)
 
-- (void)addGradualLayerColors:(NSArray *)colors;
+- (void)addGradualLayerWithColors:(NSArray *)colors;
 
 @end

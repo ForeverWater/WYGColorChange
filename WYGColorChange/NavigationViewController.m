@@ -30,7 +30,7 @@
     
     _barBackgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, -20, [UIScreen mainScreen].bounds.size.width, 64)];
     //调用UIView 类扩展方法
-    [_barBackgroundView addGradualLayerColors:@[(__bridge id)UIColorFromHEX(0x00E4FC).CGColor,
+    [_barBackgroundView addGradualLayerWithColors:@[(__bridge id)UIColorFromHEX(0x00E4FC).CGColor,
                                           (__bridge id)UIColorFromHEX(0x4AA2FB).CGColor,
                                           (__bridge id)UIColorFromHEX(0x7061F8).CGColor
                                           ]];
