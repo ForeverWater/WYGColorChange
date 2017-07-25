@@ -34,7 +34,19 @@
                                           (__bridge id)UIColorFromHEX(0x4AA2FB).CGColor,
                                           (__bridge id)UIColorFromHEX(0x7061F8).CGColor
                                           ]];
-    [self.navigationBar insertSubview:_barBackgroundView atIndex:0];
+    UIImage *backImage = [self convertViewToImage:_barBackgroundView];
+    [self.navigationBar setBackgroundImage:backImage forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setBackgroundImage:<#(nullable UIImage *)#> forBarMetrics:<#(UIBarMetrics)#>]
+}
+
+- (UIImage*)convertViewToImage:(UIView*)view{
+    CGSize s = view.bounds.size;
+    // 下面方法，第一个参数表示区域大小。第二个参数表示是否是非透明的。如果需要显示半透明效果，需要传NO，否则传YES。第三个参数就是屏幕密度了
+    UIGraphicsBeginImageContextWithOptions(s, NO, [UIScreen mainScreen].scale);
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage*image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
 }
 
 - (void)didReceiveMemoryWarning {
