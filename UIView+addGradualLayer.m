@@ -27,7 +27,7 @@
         _gradientLayer.colors = colors;
     }
     
-        [self.layer addSublayer:_gradientLayer];
+        [self.layer insertSublayer:_gradientLayer atIndex:0];
 }
 
 @end

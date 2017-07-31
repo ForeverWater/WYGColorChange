@@ -50,12 +50,19 @@
     [self.view addSubview:button];
     
     UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(220, 400, 100, 100)];
-    textLabel.text = @"UILabel";
-    textLabel.textColor = [UIColor whiteColor];
-    [textLabel addGradualLayerWithColors:@[(__bridge id)UIColorFromHEX(0x00E4FC).CGColor,
-                                 (__bridge id)UIColorFromHEX(0x4AA2FB).CGColor,
-                                 (__bridge id)UIColorFromHEX(0xFF7367).CGColor]];
+    textLabel.text = @"UILabel\n\n\na阿达阿达";
+    CGSize labSize = [textLabel.text boundingRectWithSize:CGSizeMake(textLabel.frame.size.width, MAXFLOAT)
+                                             options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin
+                                          attributes:@{NSFontAttributeName: textLabel.font}
+                                             context:nil].size;
+    textLabel.numberOfLines = 0;
+    textLabel.textColor = [UIColor blackColor];
+
     [self.view addSubview:textLabel];
+    textLabel.frame = CGRectMake(220, 400, 100, labSize.height);
+    [textLabel addGradualLayerWithColors:@[(__bridge id)UIColorFromHEX(0x00E4FC).CGColor,
+                                           (__bridge id)UIColorFromHEX(0x4AA2FB).CGColor,
+                                           (__bridge id)UIColorFromHEX(0xFF7367).CGColor]];
     
 //    _gradientColors1 = @[(__bridge id)UIColorFromHEX(0xFF873E).CGColor,
 //                         (__bridge id)UIColorFromHEX(0xFF734D).CGColor,
@@ -75,7 +82,6 @@
 //    [self.view addSubview:self.colorView];
     
 }
-
 
 
 
